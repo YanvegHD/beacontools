@@ -107,7 +107,7 @@ class Monitor(threading.Thread):
                 self.process_packet(pkt)
         self.socket.close()
 
-    def set_scan_parameters(self, scan_type=ScanType.ACTIVE, interval_ms=10, window_ms=10,
+    def set_scan_parameters(self, scan_type=ScanType.ACTIVE, interval_ms=500, window_ms=500,
                             address_type=BluetoothAddressType.RANDOM, filter_type=ScanFilter.ALL):
         """"sets the le scan parameters
 
